@@ -1,8 +1,3 @@
-<hr>
-<h1>プロフィール</h1>
-
-<h3>メールアドレス</h3>
-<%= @user.email %> 
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -14,6 +9,11 @@
   <strong>Number of pages:</strong>
   <%= @book.number_of_pages %>
 </p>
+ <div class="card-body">
+  <strong>Detail:</strong>
+  <span class="card-text"><%= @book.detail %></span>
+</div>
+
 <p>
   <strong>Images:</strong>
   <% if @book.image.attached? %>
